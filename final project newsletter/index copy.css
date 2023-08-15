@@ -1,0 +1,325 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+input{
+    width: 20rem;
+    border-bottom: solid white;
+    background-color: rgb(38, 52, 91);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.btn{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.62);
+    -moz-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.62);
+}
+
+#search-container{
+    height: 4rem;
+    background-color: rgb(38, 52, 91);
+}
+
+
+#offcanvas-close-btn{
+    padding-left: 3rem;
+}
+
+
+#navbar-toggler-container{
+    width: 50px;
+    height: auto;
+}
+
+/* nav text */
+.nav-item{
+    font-size: 16px;
+    text-align: center;
+}
+
+#nav{
+    z-index: 99;
+}
+
+#logo{
+    height: auto;
+    width: 150px;
+}
+ 
+
+#btn-responsive{
+    background-color: rgb(255,107,2);
+}
+
+.hero-image{
+    background-image: url('/img/best\ console\ games\ polygon-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh; 
+    background-repeat: no-repeat;
+    /* filter: brightness(30%); */
+}
+
+.hero-vid{
+    border-radius: 10px;
+}
+
+/* console game cards */
+.console-card{
+    background: rgb(43, 35, 68);
+    border: none;
+}
+
+.console-img{
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    -webkit-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    -moz-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    transition: transform 0.5s ease;
+
+}
+
+.card{
+    border: none;
+    
+}
+
+
+#footer-container{
+    background-color: rgb(12, 9, 9);
+    font-size: 14px;
+    text-align: center;
+}
+
+#footer-content-container{
+    padding-top: 1rem;
+}
+
+.copyright-container{
+    border-top: solid;
+}
+
+.sign-up-img{
+    height: 550px;
+    width: 1080px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social-icons{
+    color: rgb(203,19,85);
+}
+
+.footer-brand-logo{
+    width: 100px;
+    max-height: auto;
+}
+
+.footer-content{
+    line-height: 2rem;
+}
+
+@media (min-width: 767px) {
+    #search-container{
+        padding-left: 10rem;
+        padding: 15px;
+    }
+    #search-submit {
+        display: none;
+      }
+
+    .search{
+    background-color: rgb(38, 52, 91);
+    }
+
+
+    #search-brand{
+    display: none;
+    
+    }
+
+    /* icon color */
+    i.fas{
+        color: white;
+    }
+
+
+
+    #btn-responsive{
+        font-size: 1.2rem;
+        margin-top: 3rem;
+        background-color: rgb(255,107,2);
+        box-shadow: none;
+        border-radius: 10px;
+    }
+
+
+    .carousel-text{
+        padding-bottom: 20rem;
+    }
+
+    .hero-vid-content-col{
+        margin-left: 10rem;
+    }
+
+    .container-hero{
+        /* position: absolute; */
+    }
+
+    .hero-vid-content-container{
+        width: 500px;
+        background-color: rgba(38, 52, 91, 1);
+        color: white;
+        margin-top: 3rem;
+        border-radius: 5px;
+        max-height: 350px;
+    }   
+}
+
+
+
+
+
+@media (max-width: 767px) { 
+
+    .carousel-text{
+        padding-bottom: 25rem;
+    }
+
+    #search-input {
+      display: none;
+    }
+
+    #search-submit {
+      display: block;
+    }
+
+    #support{
+      display: none;
+    }
+    #myaccount{
+      display: none;
+    }
+
+    nav.navbar {
+        display: none;
+    }
+
+    #search-container{
+        height: 2.2rem;
+        background-color: white;
+        margin-bottom: 2rem;
+    }
+
+    #search-container .row {
+        text-align: center; 
+      }
+
+    #search-brand{
+     height: auto;
+     width: 80px;  
+  }
+
+    /* Move the navbar-toggler to the search-container */
+    #navbar-toggler-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    }
+
+    /* Adjust the styling of the navbar-toggler */
+    .navbar-toggler {
+        position: sticky;
+    }
+
+    i.fas{
+        color: black;
+    }
+
+    #btn-responsive{
+        font-size: 0.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-vid{
+        width: 330px;
+        height: 225px;
+        margin-top: 30.5rem;
+        margin-left: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .container-hero{
+        padding: 1rem;
+    }
+
+    .hero-vid-content-container{
+        width: 330px;
+        background-color: rgba(38, 52, 91, 1);
+        color: white;
+        margin-top: 15.5rem;
+        border-radius: 5px;
+        max-height: 270px;
+
+    }   
+}
+
+
+@media (max-width: 992px) { 
+    #search-links{
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px){
+    #sec1-container{
+        padding: 5rem;
+     }
+
+     .sign-up-text-container{
+        padding: 5rem;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1401px) { 
+    nav.navbar{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    #search-links{
+        padding-right: 5rem;
+    }
+
+    form.d-flex{
+        padding-left: 5rem;
+       }
+
+    #hero-img-container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+    }
+
+    .container-hero{
+        padding-left: 5rem;
+    }
+
+}
+
+.card-body{
+    text-align: center;
+}

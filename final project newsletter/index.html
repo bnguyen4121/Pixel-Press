@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <title>Pixel Press</title>
+
+</head>
+<body >
+  <!-- hero wrapper and section-->
+  <div id="hero-container" class="container-fluid g-0">
+      
+      <!-- search bar -->
+      <header id="search-container" class=" container-fluid">
+        <div class="d-flex justify-content-between">
+          <div class="g-0 col-auto">
+            <!-- search button -->
+            <form class="d-flex">
+              <button role="button" style="box-shadow:none" id="search-submit " class="search btn"><i class="fas fa-search fa-lg pt-2"></i>
+              </button>
+              <input id="search-input" type="search" placeholder="Search your games">
+            </form>
+          </div>
+          <!-- logo/brand -->
+          <div id="search-brand" class="col-md-auto">
+            <a class="navbar-brand" href="#">
+              <img class="img-fluid" src="img/Pixel_Press_logo-removebg-preview.png" alt="logo image">
+            </a>
+          </div>
+
+                  <!-- side navigation on smaller breakpoints -->
+          <div id="navbar-toggler-container" class="d-md-none pt-2">
+            <button role="button" class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#nav2" aria-controls="nav" aria-label="expand Navigation">
+                <span><i class="fa-2x bi bi-list"></i></span>
+            </button>
+        </div>
+        <div id="nav2" class="offcanvas offcanvas-end" tabindex="-1">
+          <button role="button" id="offcanvas-close-btn" type="button" class="btn-close mt-3 position-absolute top-0 end-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <ul class="navbar-nav mt-5 position-absolute start-50 translate-middle-x">
+            <li class="nav-item">
+              <a href="#" style="color: orange;" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="Console.html" class="nav-link">Console</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link ">PC</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Upcoming & rumors</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Tips & tricks</a>
+            </li>
+          </ul>
+        </div>
+
+          <!-- support and my account -->
+          <div id="search-links" class="nav col-md-auto">
+            
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Support</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">My Account</a>
+              </li>
+          </div>
+        </div>
+      </header>
+
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img id="logo" class="img-fluid" src="img/Pixel_Press_logo-removebg-preview.png" alt="logo image">
+            </a>
+            <button role="button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="expand Navigation" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nav" class=" container-fluid collapse navbar-collapse justify-content-lg-end">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" style="color: orange;" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Console.html" class="nav-link">Console</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">PC</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Upcoming & rumors</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Tips & tricks</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Sign Up!</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+
+      <!-- hero img & carousel slides-->
+      <div id="hero-img-container" class="container-fluid g-0">
+        <div id="hero-imgs" class="carousel slide">
+          <div class="carousel-indicators">
+            <button role="button" type="button" data-bs-target="#hero-imgs" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" class="active"></button>
+            <button role="button" type="button" data-bs-target="#hero-imgs" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+            <button role="button" type="button" data-bs-target="#hero-imgs" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img id="hero-img1" class="img-fluid d-block" src="img/hero-img 2k.jpg " alt="">
+              <div class="carousel-caption d-md-block">
+                <h3 class="carousel-h5-responsive">Check out this month's gaming <br> spotlight!</h3>
+                <p class="carousel-p-responsive">Discover New Worlds and Epic Adventures in the Latest Gaming News!</p>
+                <button role="button" id="btn-responsive" class="btn text-white ps-4 pe-4">Learn More</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="hero-img" class="img-fluid d-block" src="img/stray.png" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet,</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="hero-img" class="img-fluid d-block" src="img/ghostrunner.jpg" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet,</p>
+              </div>
+            </div>
+          </div>
+          <button role="button" class=" carousel-control-prev" type="button" data-bs-target="#hero-imgs" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button role="button" class="carousel-control-next" type="button" data-bs-target="#hero-imgs" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+  </div>  
+    
+
+  <!-- section 1 | console game/pc games previews-->
+  <section id=" console-pc-prev"> 
+    <!-- section container -->
+    <div id="sec1-container" class="container-fluid"  style="background-color: rgb(43, 35, 68);">
+
+      <!-- preview header -->
+      <div class="container-fluid scroll-animate">
+        <h2 class="text-white text-center pb-3 pt-md-0 pt-5">Console Games</h2>
+      </div>
+
+      <!-- card container | contents -->
+      <div class=" container-fluid g-0 d-flex flex-column align-items-stretch scroll-animate">
+        <div class=" row row-cols-1 row-cols-md-3 g-3 ">
+          <!-- card 1 -->
+          <a href="#">
+            <div class="col d-flex">
+              <div class="console-card card text-white">
+                <img class="console-img card-img-top img-fluid" src="img/witcher 3.jpg" alt="">
+                <div class="card-body">
+                  <h3 class="card-title text-white">The Witcher 3: Wild Hunt</h3>
+                  <p class="card-text text-white">Step into the shoes of Geralt of Rivia, the renowned monster hunter and a legendary Witcher, in the award-winning action role-playing game.</p>
+                  <button role="button" class="btn">Find out more</button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- card 2 -->
+          <a href="">
+            <div class="col d-flex">
+              <div class="console-card card">
+                <img class="console-img card-img-top img-fluid" src="img/FF16-Header-1.jpeg" alt="">
+                <div class="card-body text-white">
+                  <h3 class="card-title">Final Fantasy 16</h3>
+                  <p class="card-text">Immerse yourself in the captivating world of Final Fantasy 16, a tale of epic proportions filled with mystical beings, thrilling battles, and an unforgettable journey to restore balance to the realm.</p>
+                  <button role="button" class="btn ">Find out more</button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- card 3 -->
+          <a href="#">
+            <div class="col d-flex">
+              <div class="console-card card">
+                <img class="console-img card-img-top img-fluid" src="img/zelda-totk.jpg" alt="">
+                <div class="card-body text-white">
+                  <h3 class="card-title">The Legend of Zelda: Tears of the Kingdom</h3>
+                  <p>Embark on an unforgettable adventure with Zelda: Tears of the Kingdom! Join Princess Zelda in her quest to save the enchanting land of Hyrule from ancient evil.
+                  </p>
+                  <button role="button" class="btn ">Find out more</button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- preview header -->
+      <div class="container-fluid">
+        <h2 class="text-white text-center pb-5 pt-5 ">PC Games</h2>
+      </div>
+    
+      <!-- bottom section container -->
+      <div id="bottom-sec-container" class="container-fluid g-0 ">
+        <div class="row-cols-2 row-gap-5 d-grid">
+          
+          <!-- card 1 -->
+          <div class="card w-100">
+            <a href="#">
+              <div class="row">
+                <div class="col-md-6" style="background-color: rgb(43, 35, 68);">
+                  <img class="PC-img card-img-top img-fluid" src="img/wow.jpg" alt="">
+                </div>
+                <div class="col-md-6" style="background: rgb(43, 35, 68)">
+                  <div class="card-body text-white" style="background: rgb(43, 35, 68)">
+                    <h3 class="card-title ">World Of Warcraft: Dragonflight</h3>
+                    <p class="card-text mt-xl-5">Embark on a thrilling journey through the skies in 'Dragonflight,' a captivating aerial adventure where you become a dragon rider, soaring high and engaging in epic battles to save the mystical realm from dark forces.</p>
+                    <div class="btn mt-xl-5">Learn More</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card 2 -->
+          <div class="card w-100 mb-5">
+            <a href="#">
+              <div class="row g-0">
+                <div class="col-md-6 order-md-1 order-2" style="background: rgb(43, 35, 68)">
+                  <div class="card-body text-white">
+                    <h3 class="card-title">Lost Ark</h3>
+                    <p class="card-text mt-xl-5">Lost Ark takes you on an immersive journey through the mystical land of Arkesia, where ancient relics hold unimaginable power. Assemble your party, choose your class, and set sail on a grand adventure across diverse landscapes, from lush forests to treacherous dungeons and perilous seas.</p>
+                    <div class="btn mt-xl-5">Learn More</div>
+                  </div>
+                </div>
+                <div class="col-md-6 order-md-2 order-1" style="background-color: rgb(43, 35, 68);">
+                  <img class="PC-img card-img-top img-fluid" src="img/lost-ark.jpg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- section 1 END -->
+    
+  
+  <!-- section 2 | upcoming & rumors preview -->
+  <section id="upcoming">
+    <div class="container-fluid g-0" style="background-color: rgb(38, 52, 91);">
+      <!-- content container -->
+      <div class="container-fluid text-white p-lg-5">
+        <!-- header -->
+        <div class="container-fluid">
+          <h2 class="text-center pt-5">Upcoming & New Releases</h2>
+          <div class="p text-center pb-5">Stay ahead of the curve with the hottest new releases and look forward to upcoming titles in the gaming industry.</div>
+        </div>
+
+        <!-- cards container -->
+        <div class="container-fluid d-grid">
+          <div class="row row-cols-md-2">
+            <!-- card 1 -->
+            <a href="#">
+              <div class="cards">
+                <div class="col">
+                  <img class="upcoming-img img-fluid" src="img/starfield.jpg" alt="" class="card-img-top">
+                </div>
+                <div class="card-body pt-3 pt-md-0">
+                  <h3 class="card-title mt-sm-4">Starfield | September 6<sup>th</sup> </h3>
+                  <p class="card-text mt-md-2">Starfield, the highly anticipated upcoming video game from Bethesda Game Studios, marks a significant milestone as the studio's first new universe in over 25 years. Known for their acclaimed titles such as The Elder Scrolls V: Skyrim and Fallout 4, Bethesda is venturing into uncharted territory with this next-generation role-playing game set in the vastness of space.</p>
+                  <button role="button" class="btn mt-lg-3 mb-5 mb-md-0">Learn More</button>
+                </div>
+              </div>
+            </a>
+            <!-- card 2 -->
+            <a href="#">
+              <div class="cards">
+                <div class="col">
+                  <img class="upcoming-img img-fluid" src="img/phantom liberty.jpg" alt="" class="card-img-top">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title mt-sm-4 pt-3 pt-md-0">Cyberpunk 2077: Phantom Liberty | September 26<sup>th</sup> </h3>
+                  <p class="card-text mt-md-3">"Phantom Liberty" is an exciting new spy-thriller adventure for the popular video game Cyberpunk 2077. This thrilling expansion allows players to step back into the role of cyber-enhanced mercenary V, the protagonist of Cyberpunk 2077, for an adrenaline-pumping mission of espionage and intrigue.</p>
+                  <button role="button" class="btn mt-lg-4">Learn More</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- bottom 2 cards -->
+        <div class="container-fluid pt-5 pb-5 d-grid">
+          <div class="row row-cols-md-2">
+            <!-- card 3 -->
+            <a href="#">
+              <div class="cards">
+                <div class="col">
+                  <img class="img-fluid upcoming-img" src="img/hogwarts legacy.jpg" alt="" class="card-img-top">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title mt-sm-4 pt-3 pt-md-0">Hogwarts Legacy</h3>
+                  <p class="card-text mt-md-3">Discover this newly released gem in "Hogwarts Legacy". As a student at Hogwarts School of Witchcraft and Wizardry, you'll embark on a spellbinding adventure filled with the promise of discovery, friendship, and danger. Uncover hidden secrets, hone your magical skills, and forge your own path as you navigate a world brimming with mythical creatures, ancient spells, and captivating lore.</p>
+                  <button role="button" class="btn mt-lg-4 mb-5 mb-md-0">Learn More</button>
+                </div>
+              </div>
+            </a>
+            
+            <!-- card 4 -->
+            <a href="#">
+              <div class="cards">
+                <div class="col">
+                  <img  src="img/ghostwire.jpg" alt="" class="upcoming-img card-img-top img-fluid">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title mt-sm-4 pt-3 pt-md-0">Ghostwire Tokyo</h3>
+                  <p class="card-text mt-md-3">Newly released "Ghostwire: Tokyo" beckons you into a mesmerizing realm where the mundane and the supernatural collide in the heart of modern-day Tokyo.In the aftermath of a baffling event this upcoming release is a captivating action-adventure game that unveils a world on the brink of chaos as mysterious forces disrupt the balance between the living and the ethereal.</p>
+                  <button role="button" class="btn mt-lg-4">Learn More</button>
+                </div>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+        
+        <!-- pc preview bottom content -->
+        <div class="container-fluid">
+          <div class="container-fluid text-center">
+            <h3 class="">Tips & Tricks</h3>
+            <p class="ms-md-5 me-md-5">
+            Master complex combat techniques to unveiling secret shortcuts, from enhancing your strategic thinking to customizing your gameplay for maximum immersion
+            </p>
+            <div class="btn-group-md">
+                <button role="button" style="box-shadow: none;" type="button" class="btn">Console Games</button>
+                <button role="button" style="box-shadow: none;" type="button" class="btn m-2">Discover More</button>
+                <a role="button" href="#"><button style="box-shadow: none; background-color: rgb(255,107,2);
+                " type="button" class="btn text-white ps-5 pe-5">Top</button></a>
+            </div>
+          </div>
+        </div>
+        <!-- pc preview bottom content cards -->
+        <div class="container-fluid pt-5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-3">
+            <!-- card 1 -->
+              <a href="#"><div class="col nav-link">
+                <div class="tips-tricks-card card rounded-5">
+                  <img class="fps-tips card-img-top rounded-top-5" src="img/fps games.jpg" alt="">
+                  <div class="card-body">
+                    <h3 class="card-title mt-sm-4">First Person Shooters</h3>
+                    <p class="card-text">Dive into a wealth of strategic insights that cover everything from aiming precision and movement mechanics to advanced strategies for outsmarting opponents. Learn how to control recoil, optimize your loadout, and execute flawless tactics that will make you a force to be reckoned with.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card 2 -->
+            <a href="#">
+              <div class="col">
+                <div class="tips-tricks-card card rounded-5">
+                  <img class="card-img-top rounded-top-5" src="img/soulslike.jpg" alt="">
+                  <div class="card-body">
+                    <h3 class="card-title mt-sm-4">Souls-like</h3>
+                    <p class="card-text">Delve into the intricacies of precise combat mechanics, learn the art of timing and evasion, and uncover the hidden strategies that will elevate your gameplay. From parrying deadly attacks to deciphering enemy patterns, our guide will unravel the mysteries of these complex games.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card 3 -->
+            <a href="#">
+              <div class="col">
+                <div class="tips-tricks-card card rounded-5">
+                  <img class="card-img-top rounded-top-5" src="img/2d platformers.jpg" alt="">
+                  <div class="card-body">
+                    <h3 class="card-title mt-sm-4">2D Platformers</h3>
+                    <p class="card-text">Dive into the vibrant world of 2D platformers with our ultimate guide to becoming a jumping virtuoso. Whether you're leaping through whimsical landscapes or braving treacherous terrains, our carefully crafted tips and tricks will empower you to navigate every ledge, conquer every obstacle, and claim victory.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card 4 -->
+            <a href="#">
+              <div class="col">
+                <div class="tips-tricks-card card rounded-5 mb-5">
+                  <img class="card-img-top rounded-top-5" src="img/fighting games.jpg" alt="">
+                  <div class="card-body">
+                    <h3 class="card-title mt-sm-4">Fighting Games</h3>
+                    <p class="card-text">Step into the arena of intense combat with our comprehensive guide to becoming a true champion in the world of fighting games. Whether you're a seasoned warrior seeking to refine your skills or a newcomer eager to learn the ropes, our expert tips and tricks will equip you with the tools you need to rise above the competition.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+
+  <!-- email sign up section -->
+  <section class="email-sign-up">
+    <div class="sign-up-container container-fluid g-0">
+      <div class="sign-up-row row row-cols-md-2 row-cols-1 g-0">
+        <div class="sign-up-col col-md-4 pb-3" style="background-color: rgb(255,107,2);">
+          <div class="sign-up-text-container container-fluid text-white text-center pt-md-5 pt-2">
+            <h3 class="pt-xl-5">Stay Updated with Pixel Press!</h3>
+            <p class="pt-xl-3 pb-xl-3">Be the first to know about new game releases, exclusive content, and exciting updates. Join our newsletter and never miss a pixel of gaming action. Sign up now and level up your gaming experience!</p>
+            <btn style="box-shadow: none;" class="btn">Sign Up Now</btn>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <img class="sign-up-img img-fluid" src="img/crucible.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div id="footer-container" class="container-fluid text-white">
+      <div id="footer-content-container" class="container-fluid p-md-5">
+        <div class="row row-cols-md-4">
+           <div class="col-md">
+            <a href="#" class="navbar-brand ">
+              <img class="img-fluid footer-brand-logo pb-md-2" src="img/Pixel_Press_logo-removebg-preview.png" alt="Pixel Press Logo">
+            </a>
+            <p>Your Gateway to Gaming Excellence - Explore, Engage, Excel. Join Pixel Press and be part of the ultimate gaming experience!</p>
+            <a class="nav-link footer-social-icons" href="#"> <h1><i class="bi bi-facebook"></i> <i class="bi bi-twitter"></i> <i class="bi bi-instagram"></i></a></h1>
+           </div>
+           <div class="col-md">
+            <h5>Support</h5>
+            <a class="nav-link footer-content" href="#">FAQs</a>
+            <a class="nav-link footer-content" href="#">Community Forum</a>
+           </div>
+           <div class="col-md">
+            <h5>Resources</h5>
+            <a class="nav-link footer-content" href="#">Events & Tournaments</a>
+            <a class="nav-link footer-content" href="#">Community Hub</a>
+           </div>
+           <div class="col-md">
+            <h5>Terms of Use</h5>
+            <a class="nav-link footer-content" href="#">User Agreement</a>
+            <a class="nav-link footer-content" href="#">Cookies Policy</a>
+           </div>
+        </div>
+      </div>
+      <div class="container-fluid copyright-container p-md-5">
+        <div class="row row-cols-md-4">
+          <div class="col-md-6">
+            <a class="nav-link float-start" href="#">Copyright © 2023 Pixel Press. All rights reserved.</a>
+          </div>
+          <div class="col-md-2">
+            <a class="nav-link" href="#">Privacy Policy</a>
+          </div>
+          <div class="col-md-2">
+            <a class="nav-link" href="#">Terms & Conditions</a>
+          </div>
+          <div class="col-md-2">
+            <a class="nav-link" href="#">Site Map</a>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,333 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+input{
+    width: 20rem;
+    border-bottom: solid white;
+    background-color: rgb(38, 52, 91);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.btn{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.62);
+    -moz-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.62);
+}
+
+#search-container{
+    /* padding-bottom: 15px; */
+    height: 4rem;
+    background-color: rgb(38, 52, 91);
+}
+
+
+#offcanvas-close-btn{
+    padding-left: 3rem;
+}
+
+
+#navbar-toggler-container{
+    width: 50px;
+    height: auto;
+}
+
+/* nav text */
+.nav-item{
+    font-size: 16px;
+    width: rem;
+    text-align: center;
+}
+
+
+#logo{
+    height: auto;
+    width: 150px;
+}
+ 
+#hero-img1{
+    filter: brightness(50%);
+}
+
+#btn-responsive{
+    background-color: rgb(255,107,2);
+
+}
+
+
+/* console game cards */
+.console-card{
+    background: rgb(43, 35, 68);
+    border: none;
+}
+
+.console-img{
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    -webkit-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    -moz-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    transition: transform 0.5s ease;
+
+}
+
+.card{
+    border: none;
+    
+}
+
+/* PC games cards | img */
+
+.PC-img{
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    -webkit-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    -moz-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    transition: transform 0.5s ease;
+}
+
+/* upcoming cards | img*/
+.upcoming-img{
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    -webkit-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    -moz-box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.82);
+    transition: transform 0.5s ease;
+
+}
+
+
+.tips-tricks-card{
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.75);
+    transition: transform 0.5s ease;
+}
+
+.tips-tricks-card:hover, .upcoming-img:hover, .PC-img:hover, .console-img:hover{
+    transform: scale(1.03);
+    box-shadow: 1px 1px 19px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 19px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 19px 4px rgba(0,0,0,0.75);
+    
+}
+
+#footer-container{
+    background-color: rgb(12, 9, 9);
+    font-size: 14px;
+    text-align: center;
+}
+
+#footer-content-container{
+    padding-top: 1rem;
+}
+
+.copyright-container{
+    border-top: solid;
+}
+
+.sign-up-img{
+    height: 550px;
+    width: 1080px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social-icons{
+    color: rgb(203,19,85);
+}
+
+.footer-brand-logo{
+    width: 100px;
+    max-height: auto;
+}
+
+.footer-content{
+    line-height: 2rem;
+}
+
+@media (min-width: 767px) {
+    #search-container{
+        padding-left: 10rem;
+        padding: 15px;
+    }
+    #search-submit {
+        display: none;
+      }
+
+    .search{
+    background-color: rgb(38, 52, 91);
+    }
+
+
+    #search-brand{
+    display: none;
+    
+    }
+
+    /* icon color */
+    i.fas{
+        color: white;
+    }
+
+    .carousel-h5-responsive{
+        font-size: 3rem;
+
+    }
+
+    .carousel-p-responsive{
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    #btn-responsive{
+        font-size: 1.2rem;
+        margin-top: 3rem;
+        background-color: rgb(255,107,2);
+        box-shadow: none;
+        border-radius: 10px;
+    }
+    
+    .carousel-caption{
+        padding-bottom: 14rem;
+
+    }
+
+}
+
+@media (max-width: 767px) {  
+
+    #search-input {
+      display: none;
+    }
+
+    #search-submit {
+      display: block;
+    }
+
+    #support{
+      display: none;
+    }
+    #myaccount{
+      display: none;
+    }
+
+    nav.navbar {
+        display: none;
+    }
+
+    #search-container{
+        height: 2.2rem;
+        background-color: white;
+        margin-bottom: 2rem;
+    }
+
+    #search-container .row {
+        text-align: center; 
+      }
+
+    #search-brand{
+     height: auto;
+     width: 80px;  
+  }
+
+    /* Move the navbar-toggler to the search-container */
+    #navbar-toggler-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    }
+
+    /* Adjust the styling of the navbar-toggler */
+    .navbar-toggler {
+        position: sticky;
+    }
+
+    i.fas{
+        color: black;
+    }
+
+
+    .carousel-h5-responsive{
+        font-size: 1rem;
+    }
+
+    .carousel-p-responsive{
+        display: none;
+    }
+
+    #btn-responsive{
+        font-size: 0.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .phantom-lib-img{
+        margin-top: 2rem;
+    }
+
+    .ghostwire-img{
+        margin-top: 2rem;
+    }
+
+    .sign-up-img{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 992px) { 
+    #search-links{
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px){
+    #sec1-container{
+        padding: 5rem;
+     }
+
+     .sign-up-text-container{
+        padding: 5rem;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1401px) { 
+    nav.navbar{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    #search-links{
+        padding-right: 5rem;
+    }
+
+    form.d-flex{
+        padding-left: 5rem;
+       }
+
+    #hero-img-container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+    }
+
+
+}
+
+.card-body{
+    text-align: center;
+}
